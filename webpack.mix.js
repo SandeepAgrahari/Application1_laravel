@@ -11,26 +11,27 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix
+    /* CSS */
+    .sass('resources/sass/main.scss', 'public/css/codebase.css')
+    .sass('resources/sass/codebase/themes/corporate.scss', 'public/css/themes/')
+    .sass('resources/sass/codebase/themes/earth.scss', 'public/css/themes/')
+    .sass('resources/sass/codebase/themes/elegance.scss', 'public/css/themes/')
+    .sass('resources/sass/codebase/themes/flat.scss', 'public/css/themes/')
+    .sass('resources/sass/codebase/themes/pulse.scss', 'public/css/themes/')
 
-mix.styles([
-   'resources/css/libs/blog-post.css',
-   'resources/css/libs/bootstrap.css',
-   'resources/css/libs/bootstrap.min.css',
-   'resources/css/libs/font-awesome.css',
-   'resources/css/libs/metisMenu.css',
-   'resources/css/libs/sb-admin-2.css',
-   'resources/css/libs/styles.css',
+    /* JS */
+    .js('resources/js/app.js', 'public/js/laravel.app.js')
+    .js('resources/js/codebase/app.js', 'public/js/codebase.app.js')
 
-], 'public/css/libs.css');
+    /* Page JS */
+    .js('resources/js/pages/tables_datatables.js', 'public/js/pages/tables_datatables.js')
 
-mix.scripts([
-   'resources/css/libs/bootstrap.js',
-   'resources/css/libs/bootstrap.min.js',
-   'resources/css/libs/jquery.js',
-   'resources/css/libs/metisMenu.js',
-   'resources/css/libs/sb-admin-2.js',
-   'resources/css/libs/scripts.js',
+    /* Tools */
+    .browserSync('localhost:8000')
+    .disableNotifications()
 
-], 'public/js/libs.js')
+    /* Options */
+    .options({
+        processCssUrls: false
+    });
