@@ -23,7 +23,7 @@ class AdminUsersController extends Controller
      */
     public function create()
     {
-        //
+        dd('sandeep');
     }
 
     /**
