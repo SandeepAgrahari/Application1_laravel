@@ -10847,12 +10847,7 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 }
 @media (min-width: 992px) {
   #page-container.page-header-modern #page-header {
-    background-color: #f0f2f5;
     box-shadow: none !important;
-  }
-  #page-container.page-header-modern #page-header > .content-header {
-    padding-top: 32px;
-    padding-bottom: 2px;
   }
 }
 #page-container.page-header-inverse #page-header {
