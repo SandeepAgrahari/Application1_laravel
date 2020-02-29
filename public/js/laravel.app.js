@@ -19201,13 +19201,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/OneToOne/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /var/www/html/OneToOne/resources/sass/main.scss */"./resources/sass/main.scss");
-__webpack_require__(/*! /var/www/html/OneToOne/resources/sass/codebase/themes/corporate.scss */"./resources/sass/codebase/themes/corporate.scss");
-__webpack_require__(/*! /var/www/html/OneToOne/resources/sass/codebase/themes/earth.scss */"./resources/sass/codebase/themes/earth.scss");
-__webpack_require__(/*! /var/www/html/OneToOne/resources/sass/codebase/themes/elegance.scss */"./resources/sass/codebase/themes/elegance.scss");
-__webpack_require__(/*! /var/www/html/OneToOne/resources/sass/codebase/themes/flat.scss */"./resources/sass/codebase/themes/flat.scss");
-module.exports = __webpack_require__(/*! /var/www/html/OneToOne/resources/sass/codebase/themes/pulse.scss */"./resources/sass/codebase/themes/pulse.scss");
+__webpack_require__(/*! /var/www/html/Application1_laravel/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /var/www/html/Application1_laravel/resources/sass/main.scss */"./resources/sass/main.scss");
+__webpack_require__(/*! /var/www/html/Application1_laravel/resources/sass/codebase/themes/corporate.scss */"./resources/sass/codebase/themes/corporate.scss");
+__webpack_require__(/*! /var/www/html/Application1_laravel/resources/sass/codebase/themes/earth.scss */"./resources/sass/codebase/themes/earth.scss");
+__webpack_require__(/*! /var/www/html/Application1_laravel/resources/sass/codebase/themes/elegance.scss */"./resources/sass/codebase/themes/elegance.scss");
+__webpack_require__(/*! /var/www/html/Application1_laravel/resources/sass/codebase/themes/flat.scss */"./resources/sass/codebase/themes/flat.scss");
+module.exports = __webpack_require__(/*! /var/www/html/Application1_laravel/resources/sass/codebase/themes/pulse.scss */"./resources/sass/codebase/themes/pulse.scss");
 
 
 /***/ })

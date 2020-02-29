@@ -27643,7 +27643,7 @@ function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /var/www/html/OneToOne/resources/js/codebase/app.js */"./resources/js/codebase/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/Application1_laravel/resources/js/codebase/app.js */"./resources/js/codebase/app.js");
 
 
 /***/ })

@@ -160,7 +160,7 @@ jQuery(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /var/www/html/OneToOne/resources/js/pages/tables_datatables.js */"./resources/js/pages/tables_datatables.js");
+module.exports = __webpack_require__(/*! /var/www/html/Application1_laravel/resources/js/pages/tables_datatables.js */"./resources/js/pages/tables_datatables.js");
 
 
 /***/ })

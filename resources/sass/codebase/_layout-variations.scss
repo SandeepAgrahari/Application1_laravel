@@ -34,12 +34,11 @@
     // Page header related
     @include media-breakpoint-up(lg) {
         &.page-header-modern #page-header {
-            background-color: $body-bg;
-            box-shadow: none !important;
+            
 
             > .content-header {
-                padding-top: $header-height - 36px;
-                padding-bottom: 2px;
+                // padding-top: $header-height - 36px;
+                // padding-bottom: 2px;
             }
         }
     }
@@ -136,7 +135,7 @@
     // Sidebar and Side Overlay
     @include media-breakpoint-up(lg) {
         &.page-header-modern #sidebar {
-            box-shadow: 5px 0 10px $body-bg-dark;
+            // box-shadow: 5px 0 10px $body-bg-dark;
         }
 
         &.page-header-modern.sidebar-r #sidebar {

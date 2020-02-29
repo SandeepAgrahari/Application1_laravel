@@ -10845,16 +10845,6 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 #page-container.main-content-boxed > #page-footer .content {
   max-width: 1200px;
 }
-@media (min-width: 992px) {
-  #page-container.page-header-modern #page-header {
-    background-color: #f0f2f5;
-    box-shadow: none !important;
-  }
-  #page-container.page-header-modern #page-header > .content-header {
-    padding-top: 32px;
-    padding-bottom: 2px;
-  }
-}
 #page-container.page-header-inverse #page-header {
   color: #cbd2dd;
   background-color: #343a40;
@@ -10919,9 +10909,6 @@ a.badge-secondary:focus, a.badge-secondary.focus {
   }
 }
 @media (min-width: 992px) {
-  #page-container.page-header-modern #sidebar {
-    box-shadow: 5px 0 10px #e4e7ed;
-  }
   #page-container.page-header-modern.sidebar-r #sidebar {
     box-shadow: -5px 0 10px #e4e7ed;
   }
