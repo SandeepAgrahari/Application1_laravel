@@ -201,6 +201,39 @@
                                     <i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span>
                                 </a>
                             </li>
+                            <li class="{{ request()->is('pages/*') ? ' open' : '' }}">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-user"></i><span class="sidebar-mini-hide">User</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="{{route('users.index')}}">All User</a>
+                                    </li>
+                                    <li>
+                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href={{route('users.create')}}>Create User</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="{{ request()->is('pages/*') ? ' open' : '' }}">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Post</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="/pages/datatables">All Post</a>
+                                    </li>
+                                    <li>
+                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="/pages/slick">Create Post</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="{{ request()->is('pages/*') ? ' open' : '' }}">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-trophy"></i><span class="sidebar-mini-hide">Category</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="/pages/datatables">All Category</a>
+                                    </li>
+                                    <li>
+                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="/pages/slick">Create Category</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-main-heading">
                                 <span class="sidebar-mini-visible">VR</span><span class="sidebar-mini-hidden">Various</span>
                             </li>
