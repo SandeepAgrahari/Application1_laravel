@@ -518,7 +518,8 @@
             <!-- END Header -->
 
             <!-- Main Container -->
-            <main id="main-container">
+            <main id="main-container" class="container">
+
                 @yield('content')
             </main>
             <!-- END Main Container -->
