@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserResquest;
 use App\User;
 use App\Role;
 use Illuminate\Http\Request;
@@ -36,9 +37,11 @@ class AdminUsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserResquest $request)
     {
-       dd($request);
+       User::create($request->all());
+       return redirect('/admin/users');
+
     }
 
     /**

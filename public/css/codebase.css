@@ -9566,6 +9566,10 @@ label {
   font-weight: 600;
 }
 
+.form-material > .remove-box-shadow {
+  box-shadow: none !important;
+}
+
 .invalid-feedback {
   font-size: 0.928571429rem;
 }
