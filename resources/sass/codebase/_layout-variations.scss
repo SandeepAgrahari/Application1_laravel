@@ -34,8 +34,8 @@
     // Page header related
     @include media-breakpoint-up(lg) {
         &.page-header-modern #page-header {
-            
-
+            // background-color: $body-bg;
+            box-shadow: none !important;
             > .content-header {
                 // padding-top: $header-height - 36px;
                 // padding-bottom: 2px;

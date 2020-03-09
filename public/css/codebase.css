@@ -9566,6 +9566,10 @@ label {
   font-weight: 600;
 }
 
+.form-material > .remove-box-shadow {
+  box-shadow: none !important;
+}
+
 .invalid-feedback {
   font-size: 0.928571429rem;
 }
@@ -10845,6 +10849,7 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 #page-container.main-content-boxed > #page-footer .content {
   max-width: 1200px;
 }
+
 #page-container.page-header-inverse #page-header {
   color: #cbd2dd;
   background-color: #343a40;
