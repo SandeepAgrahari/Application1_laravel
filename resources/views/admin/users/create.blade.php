@@ -57,11 +57,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col col-sm-6 {{ $errors->has('photo') ? 'has-error is-invalid' : ''}}">
+                <div class="form-group col col-sm-6 {{ $errors->has('photo_id') ? 'has-error is-invalid' : ''}}">
                     <div class="form-material">
-                        {!! Form::file('photo', ['class'=>'form-control remove-box-shadow', 'id'=>'photo']) !!}
-                        {!! $errors->first('photo', '<p class="help-block invalid-feedback">:message</p>') !!}
-                        {!! Html::decode(Form::label('photo', 'Profile Picture <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
+                        {!! Form::file('photo_id', ['class'=>'form-control remove-box-shadow', 'id'=>'photo_id']) !!}
+                        {!! $errors->first('photo_id', '<p class="help-block invalid-feedback">:message</p>') !!}
+                        {!! Html::decode(Form::label('photo_id', 'Profile Picture ', ['class'=>'col-form-label'])) !!}
                     </div>
                 </div>
             </div>
