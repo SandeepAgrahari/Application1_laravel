@@ -48,11 +48,11 @@
                             {!! Html::decode(Form::label('password', 'Password <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
                         </div>
                 </div>
-                <div class="form-group col col-sm-6 {{ $errors->has('cpassword') ? 'has-error is-invalid' : ''}}">
+                <div class="form-group col col-sm-6 {{ $errors->has('password_confirmation') ? 'has-error is-invalid' : ''}}">
                     <div class="form-material">
-                        {!! Form::password('cpassword', ['class'=>'form-control', 'placeholder'=> 'Enter a confirm password..', 'id'=>'cpassword']) !!}
-                        {!! $errors->first('cpassword', '<p class="help-block invalid-feedback">:message</p>') !!}
-                        {!! Html::decode(Form::label('cpassword', 'Confirm Password <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
+                        {!! Form::password('password_confirmation', ['class'=>'form-control', 'placeholder'=> 'Enter a confirm password..', 'id'=>'password_confirmation']) !!}
+                        {!! $errors->first('password_confirmation', '<p class="help-block invalid-feedback">:message</p>') !!}
+                        {!! Html::decode(Form::label('password_confirmation', 'Confirm Password <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
                     </div>
                 </div>
             </div>

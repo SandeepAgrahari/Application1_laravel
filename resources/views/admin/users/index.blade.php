@@ -27,7 +27,7 @@
                         @foreach ($users as $user)
                             <tr>
                                 <td class="text-center">
-                                    <img class="img-avatar img-avatar48" src="/media/avatars/avatar12.jpg" alt="">
+                                <img class="img-avatar img-avatar48" src="{{$user->photo ? $user->photo->file : 'Not available'}}" alt="">
                                 </td>
                                 <td class="text-center">
                                        {{ $user->id}}
