@@ -28,8 +28,8 @@ class UserResquest extends FormRequest
             'email' => 'required',
             'role_id' => 'required',
             'status' => 'required',
-            'password' => 'required',
-            'cpassword' => 'required'
+            'password' => 'required|confirmed|min:6',
+            'password_confirmation' => 'required'
         ];
     }
     /**
@@ -45,7 +45,7 @@ class UserResquest extends FormRequest
             'role_id.required' => 'Select any one of role',
             'status.required' => 'Select any one of Status',
             'password.required' => 'Password can not be blank',
-            'cpassword.required' => 'confirm password can not be blank'
+            'password_confirmation.required' => 'confirm password can not be blank'
             // 'name.required' => 'Name can not be blank',
         ];
 

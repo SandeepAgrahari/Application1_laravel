@@ -11,7 +11,13 @@ class Photo extends Model
      *
      * @var array
      */
+
+    protected $uploades = '/images/'; 
     protected $fillable = [
         'file'
     ];
+
+    public function getFileAttribute($photo){
+        return  $this->uploades . $photo;
+    }
 }
