@@ -27,7 +27,12 @@
                         @foreach ($users as $user)
                             <tr>
                                 <td class="text-center">
-                                <img class="img-avatar img-avatar48" src="{{$user->photo ? $user->photo->file : 'Not available'}}" alt="">
+                                    @if ($user->photo)
+                                        <img class="img-avatar img-avatar48" src="{{$user->photo->file}}" alt=""> 
+                                    @else
+                                        <img class="img-avatar img-avatar48" src="/media/avatars/avatar12.jpg" alt="">
+                                    @endif
+                                    
                                 </td>
                                 <td class="text-center">
                                        {{ $user->id}}
@@ -43,12 +48,12 @@
                                 <td class="text-center">{{$user->created_at->diffForHumans()}}</td>
                                 <td class="text-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit">
+                                        <a type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit">
                                             <i class="fa fa-pencil"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" title="Delete">
+                                        </a>
+                                        <a type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" title="Delete">
                                             <i class="fa fa-times"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
