@@ -44,16 +44,19 @@
                                 </td>
                                 <td class="text-center">
                                 
-                                    {{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
+                                    {{$user->status == 1 ? 'Active' : 'Not Active'}}</td>
                                 <td class="text-center">{{$user->created_at->diffForHumans()}}</td>
                                 <td class="text-center">
                                     <div class="btn-group">
-                                        <a type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit">
+                                        <a href ="{{route('users.edit', $user->id)}}" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit">
                                             <i class="fa fa-pencil"></i>
                                         </a>
-                                        <a type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" title="Delete">
+                                    {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}    
+                                    {{-- <a href ="{{route('users.destroy', $user->id)}}" class="btn btn-sm btn-danger" data-toggle="tooltip" title="Delete">
                                             <i class="fa fa-times"></i>
-                                        </a>
+                                        </a> --}}
+                                    {!! Form::button('<i class="fa fa-times"></i>', ['type' =>'submit','class'=>'btn btn-sm btn-danger']) !!}    
+                                    {!! Form::close() !!}
                                     </div>
                                 </td>
                             </tr>
