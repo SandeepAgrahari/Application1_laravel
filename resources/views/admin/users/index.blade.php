@@ -1,6 +1,6 @@
 @extends('layouts/backend')
-
 @section('content')
+@include('layouts/flash-message')
 <h1 class="content-heading"></h1>
 <div class="block"> 
     <div class="block-header block-header-default">

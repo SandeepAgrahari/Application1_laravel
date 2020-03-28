@@ -62,7 +62,7 @@ class AdminUsersController extends Controller
             $input['password'] = bcrypt($request->password);
 
             User::create($input);
-            return redirect('/admin/users');
+            return redirect('/admin/users')->with('success', 'User Created Successfully');
 
     }
 
@@ -115,7 +115,7 @@ class AdminUsersController extends Controller
             $input['photo_id'] = $photo->id;
         }
         $user->update($input);
-        return redirect('/admin/users');
+        return redirect('/admin/users')->with('success', 'User updated Successfully');
     }
 
     /**
@@ -126,9 +126,10 @@ class AdminUsersController extends Controller
      */
     public function destroy($id)
     {
-        User::findOrFail($id)->delete();
-
-        // $request->session()->flash('', $value);
-        return redirect('/admin/users');
+        $user = User::findOrFail($id);
+        unlink(public_path() . $user->photo->file);
+        $user->delete();
+        return redirect('/admin/users')
+        ->with('success','User Deleted Successfully');
     }
 }

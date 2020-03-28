@@ -216,10 +216,10 @@
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Post</span></a>
                                 <ul>
                                     <li>
-                                        <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="/pages/datatables">All Post</a>
+                                    <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="{{route('posts.index')}}">All Post</a>
                                     </li>
                                     <li>
-                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="/pages/slick">Create Post</a>
+                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="{{route('posts.create')}}">Create Post</a>
                                     </li>
                                 </ul>
                             </li>
