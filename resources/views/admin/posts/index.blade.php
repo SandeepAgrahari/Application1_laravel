@@ -36,7 +36,7 @@
                                 <td class="text-center">{{$post->user->name}}</td>
                                 <td class="text-center">{{$post->category ? $post->category->name : 'Uncategorized'}}</td>
                                 <td class="text-center">{{$post->title}}</td>
-                                <td class="text-center">{{$post->body}}</td>
+                                <td class="text-center">{{\Illuminate\Support\Str::limit($post->body,30)}}</td>
                                 <td class="text-center">{{$post->created_at->diffForHumans()}}</td>
                                 <td class="text-center">
                                     <div class="btn-group">
