@@ -44,7 +44,7 @@
                                 </td>
                                 <td class="text-center">
                                 
-                                    {{$user->status == 1 ? 'Active' : 'Not Active'}}</td>
+                                    {{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
                                 <td class="text-center">{{$user->created_at->diffForHumans()}}</td>
                                 <td class="text-center">
                                     <div class="btn-group">

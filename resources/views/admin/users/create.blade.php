@@ -32,11 +32,11 @@
                                 {!! Html::decode(Form::label('role_id', 'Role <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
                             </div>
                     </div>
-                    <div class="form-group col col-sm-6 {{ $errors->has('status') ? 'has-error is-invalid' : ''}}">
+                    <div class="form-group col col-sm-6 {{ $errors->has('is_active') ? 'has-error is-invalid' : ''}}">
                             <div class="form-material">
-                                {!! Form::select('status', ['1'=>'Active','0'=>'Not Active'], 0 , ['class'=>'form-control', 'id'=>'status']) !!}
-                                {!! $errors->first('status', '<p class="help-block invalid-feedback">:message</p>') !!}
-                                {!! Html::decode(Form::label('status', 'Status <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
+                                {!! Form::select('is_active', ['1'=>'Active','0'=>'Not Active'], 0 , ['class'=>'form-control', 'id'=>'is_active']) !!}
+                                {!! $errors->first('is_active', '<p class="help-block invalid-feedback">:message</p>') !!}
+                                {!! Html::decode(Form::label('is_active', 'Status <span class="text-danger">*</span>', ['class'=>'col-form-label'])) !!}
                             </div>
                     </div>
             </div>

@@ -27,7 +27,7 @@ class UserResquest extends FormRequest
             'name' => 'required',
             'email' => 'required',
             'role_id' => 'required',
-            'status' => 'required',
+            'is_active' => 'required',
             'password' => 'required|confirmed|min:6',
             'password_confirmation' => 'required'
         ];
@@ -43,7 +43,7 @@ class UserResquest extends FormRequest
             'name.required' => 'Name can not be blank',
             'email.required' => 'email can not be blank',
             'role_id.required' => 'Select any one of role',
-            'status.required' => 'Select any one of Status',
+            'is_active.required' => 'Select any one of Status',
             'password.required' => 'Password can not be blank',
             'password_confirmation.required' => 'confirm password can not be blank'
         ];

@@ -42,7 +42,7 @@ class AdminUsersController extends Controller
      */
     public function store(UserResquest $request)
     {
-        if(trim($request->password)){
+        if(trim($request->password) == ''){
             $input = $request->except('password');
         }else{
             $input = $request->all();
@@ -100,7 +100,7 @@ class AdminUsersController extends Controller
     public function update(UserEditRequest $request, $id)
     {
         $user = User::findOrFail($id);
-        if(trim($request->password)){
+        if(trim($request->password) == ''){
             $input = $request->except('password');
         }else{
             $input = $request->all();
@@ -115,6 +115,7 @@ class AdminUsersController extends Controller
             $input['photo_id'] = $photo->id;
         }
         $user->update($input);
+        
         return redirect('/admin/users')->with('success', 'User updated Successfully');
     }
 
