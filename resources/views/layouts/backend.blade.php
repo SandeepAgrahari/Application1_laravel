@@ -227,10 +227,10 @@
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-trophy"></i><span class="sidebar-mini-hide">Category</span></a>
                                 <ul>
                                     <li>
-                                        <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="/pages/datatables">All Category</a>
+                                    <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="{{route('categories.index')}}">All Category</a>
                                     </li>
                                     <li>
-                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="/pages/slick">Create Category</a>
+                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="{{route('categories.create')}}">Create Category</a>
                                     </li>
                                 </ul>
                             </li>

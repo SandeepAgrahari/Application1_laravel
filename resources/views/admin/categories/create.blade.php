@@ -4,10 +4,10 @@
 <h1 class="content-heading"></h1>
 <div class="block"> 
     <div class="block-header block-header-default">
-            <h3 class="block-title">Update Category</h3>
+            <h3 class="block-title">Create Category</h3>
     </div> 
     <div class="block-content">
-        {!! Form::model($category, ['method'=>'PATCh','action'=>['AdminCategoriesController@update', $category->id]]) !!}
+        {!! Form::open(['method'=>'POST','action'=>'AdminCategoriesController@store']) !!}
             <div class="row">
                 <div class="form-group col col-sm-12 {{ $errors->has('name') ? 'has-error is-invalid' : ''}}">
                     <div class="form-material">
