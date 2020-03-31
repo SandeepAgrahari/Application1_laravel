@@ -234,6 +234,17 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="{{ request()->is('pages/*') ? ' open' : '' }}">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-film"></i><span class="sidebar-mini-hide">Media</span></a>
+                                <ul>
+                                    <li>
+                                    <a class="{{ request()->is('pages/datatables') ? ' active' : '' }}" href="{{route('media.index')}}">All Media</a>
+                                    </li>
+                                    <li>
+                                        <a class="{{ request()->is('pages/slick') ? ' active' : '' }}" href="{{route('media.create')}}">Upload Media</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-main-heading">
                                 <span class="sidebar-mini-visible">VR</span><span class="sidebar-mini-hidden">Various</span>
                             </li>
