@@ -9,7 +9,7 @@ class AdminMediaController extends Controller
 {
     public function index(){
         $photos = Photo::all();
-        return view('admin.media.index', compact('photos'));
+        return view('admin.media.index',compact('photos'));
     }
 
     public function create(){
